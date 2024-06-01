@@ -1,0 +1,21 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-xl) var(--spacing-base) 7rem var(--spacing-base);
+}
+
+.section-title {
+  font-size: var(--font-xl);
+  font-weight: var(--font-semibold);
+}
+
+.section-title::after {
+  content: "";
+  background-color: currentColor;
+  display: block;
+  height: 4px;
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}

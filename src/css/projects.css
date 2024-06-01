@@ -1,0 +1,21 @@
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.project-card {
+  background-color: var(--secondary-color);
+  background-image: url("../img/texture-card.png");
+  border-radius: var(--shape-sm);
+  box-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  display: block;
+  padding: var(--spacing-md);
+}
+
+.project-card-name {
+  line-height: 1.75rem;
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+}

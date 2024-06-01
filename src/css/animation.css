@@ -1,0 +1,101 @@
+.animation {
+  animation-duration: var(--animation-duration);
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+.home.animation {
+  animation-name: fade-in;
+  -webkit-animation-name: fade-in;
+}
+
+.animation .section-title::after {
+  animation-name: line-slide;
+  animation-duration: var(--animation-duration);
+  -webkit-animation-name: line-slide;
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+.animation .about-card, .about-card:hover {
+  animation-name: card-rotation;
+  animation-duration: var(--animation-duration);
+  -webkit-animation-name: card-rotation;
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+.about-card:hover {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+.animation .project-image {
+  animation-name: slide-up-to-down;
+  animation-duration: var(--animation-duration);
+  -webkit-animation-name: slide-up-to-down;
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+.animation .project-info {
+  animation-name: fade-in;
+  animation-duration: var(--animation-duration);
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+.animation .thank-you-image {
+  animation-name: spin;
+  animation-duration: var(--animation-duration);
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: var(--animation-duration);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes line-slide {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@-webkit-keyframes line-slide {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes card-rotation {
+  from { rotate: calc(var(--card-rotation) * -1); }
+  to { rotate: var(--card-rotation); }
+}
+
+@-webkit-keyframes card-rotation {
+  from { rotate: calc(var(--card-rotation) * -1); }
+  to { rotate: var(--card-rotation); }
+}
+
+@keyframes slide-up-to-down {
+  from { top: -100%; }
+  to { top: 50%; }
+}
+
+@-webkit-keyframes slide-up-to-down {
+  from { top: -100%; }
+  to { top: 50%; }
+}
+
+@keyframes spin {
+  from { transform: rotateY(90deg); }
+  to { transform: rotateY(0); }
+}
+
+@-webkit-keyframes spin {
+  from { transform: rotateY(90deg); }
+  to { transform: rotateY(0); }
+}

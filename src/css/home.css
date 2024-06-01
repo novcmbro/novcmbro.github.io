@@ -1,0 +1,27 @@
+.home .container {
+  position: relative;
+}
+
+.home-novcmbro-logo {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  max-height: 280px;
+  margin: 0 auto;
+  object-fit: cover;
+  -o-object-fit: cover;
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+  -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+}
+
+.home-portfolio {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  transform: translateX(-50%);
+  letter-spacing: clamp(10px, 4vw, 30px);
+  font-size: clamp(var(--font-sm), 4vw, var(--font-base));
+  font-weight: var(--font-semibold);
+  text-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  text-transform: uppercase;
+}

@@ -1,0 +1,62 @@
+.about-card {
+  --card-rotation: 3deg;
+  background-color: var(--secondary-color);
+  background-image: url("../img/texture-card.png");
+  border-radius: var(--shape-base);
+  box-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  display: flex;
+  gap: var(--spacing-base);
+  font-size: var(--font-sm);
+  width: 100%;
+  max-width: 320px;
+  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  margin: var(--spacing-sm) auto var(--spacing-md) auto;
+  padding: var(--spacing-base);
+  rotate: var(--card-rotation);
+}
+
+.about-card::before, .about-card::after {
+  --shadow-offset: 1px 1px;
+  --shadow-blur: 2px;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  rotate: -10deg;
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+  -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+}
+
+.about-card::before {
+  background-image: url("../img/chrome-star.png");
+  left: calc(var(--spacing-sm) * -1);
+  width: 5rem;
+  height: 3.5rem;
+}
+
+.about-card::after {
+  background-image: url("../img/chrome-cross.png");
+  right: calc(var(--spacing-sm) * -0.5);
+  width: 3.5rem;
+  height: 4.5rem;
+}
+
+.about-card-avatar {
+  --shadow-offset: 0 0;
+  --avatar-size: 120px;
+  box-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+
+.about-card-info-list-item:not(:first-of-type) {
+  margin-top: var(--spacing-base);
+}
+
+.about-card-info {
+  line-height: 1rem;
+  font-weight: var(--font-semibold);
+}

@@ -1,0 +1,65 @@
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+  -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+}
+
+.project-name {
+  font-size: clamp(var(--font-xl), 5vw, var(--font-xxl));
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--spacing-base);
+}
+
+.project-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-base);
+  max-width: 400px;
+  margin-top: var(--spacing-md);
+}
+
+.project-link {
+  background-color: var(--secondary-color);
+  background-image: url("../img/texture-card.png");
+  border-radius: var(--shape-sm);
+  box-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  position: relative;
+  flex-grow: 1;
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  text-align: center;
+  padding: var(--spacing-base);
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+    --image-size: 40%;
+    position: relative;
+  }
+
+  .project-image {
+    position: absolute;
+    top: 50%;
+    max-width: var(--image-size);
+    transform: translateY(-50%);
+  }
+
+  .project:nth-of-type(odd) .project-image {
+    left: 0;
+  }
+
+  .project:nth-of-type(odd) .project-info {
+    margin-left: auto;
+  }
+
+  .project:nth-of-type(even) .project-image {
+    right: 0;
+  }
+  
+  .project-info {
+    width: calc(100% - var(--image-size));
+  }
+}

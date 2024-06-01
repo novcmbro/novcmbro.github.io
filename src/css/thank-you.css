@@ -1,0 +1,8 @@
+.thank-you-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+  -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+}

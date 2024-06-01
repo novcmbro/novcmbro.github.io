@@ -1,0 +1,29 @@
+.education-and-skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl) var(--spacing-lg);
+}
+
+.education {
+  flex-grow: 1;
+}
+
+.education-course-list-item:not(:first-of-type) {
+  margin-top: var(--spacing-base);
+}
+
+.education-course {
+  line-height: var(--spacing-lg);
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+}
+
+.skills {
+  flex-grow: 5;
+}
+
+.skills-techs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: var(--spacing-base) 0;
+}

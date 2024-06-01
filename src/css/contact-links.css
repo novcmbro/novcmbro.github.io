@@ -1,0 +1,21 @@
+.contact-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--spacing-md) var(--spacing-lg);
+  font-weight: var(--font-semibold);
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+  -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
+}
+
+.about .contact-links-list {
+  margin-top: var(--spacing-lg);
+}
+
+.thank-you .contact-links-list-item {
+  margin: 0 auto;
+}
+
+.contact-icon {
+  vertical-align: middle;
+}
