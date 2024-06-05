@@ -50,7 +50,11 @@ const ptBR = {
   projects: {
     title: "Projetos",
     links: "Links do projeto",
-    code: "Código"
+    code: "Código",
+    decoder: {
+      category: "Criptografia de texto",
+      description: "Fácil criptografia e descriptografia de texto substituindo cada letra por um termo correspondente e vice versa. Esta ferramenta permite transformar uma mensagem em um formato codificado e posteriormente reverter o processo para restaurar o texto original."
+    }
   },
   thank_you: {
     title: "Agradecimentos"

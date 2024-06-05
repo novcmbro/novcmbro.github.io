@@ -50,7 +50,11 @@ const enUS = {
   projects: {
     title: "Projects",
     links: "Project links",
-    code: "Code"
+    code: "Code",
+    decoder: {
+      category: "Text encryption",
+      description: "Easy text encryption and decryption by replacing each letter with a corresponding term and vice versa. This tool allows to transform a message into a coded format and then reverse the process to restore the original text."
+    }
   },
   thank_you: {
     title: "Thank you"
