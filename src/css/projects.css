@@ -1,6 +1,6 @@
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--spacing-md);
 }
 
@@ -14,8 +14,8 @@
 }
 
 .project-card-name {
-  line-height: 1.75rem;
-  font-size: var(--font-md);
+  line-height: 2rem;
+  font-size: var(--font-lg);
   font-weight: var(--font-semibold);
   text-transform: uppercase;
 }
