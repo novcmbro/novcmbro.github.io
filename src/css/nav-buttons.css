@@ -32,3 +32,19 @@
 .nav-section-buttons > :not(:first-child) {
   margin-top: var(--spacing-sm);
 }
+
+:root.js-enabled .nav-noscript-message {
+  display: none;
+}
+
+:root:not(.js-enabled) .nav-noscript-message {
+  background-color: var(--secondary-color);
+  background-image: url("../img/texture-card.png");
+  border-radius: 0 0 var(--shape-sm) var(--shape-sm);
+  box-shadow: var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  position: fixed;
+  display: block;
+  width: 100%;
+  padding: var(--spacing-base);
+  z-index: 9999;
+}
