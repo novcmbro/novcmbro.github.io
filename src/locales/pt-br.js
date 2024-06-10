@@ -1,4 +1,7 @@
 const ptBR = {
+  title: "Portfólio",
+  description: "Portfólio de Novcmbro (Novembro), Desenvolvedor Web Front End",
+  keywords: "portfólio, desenvolvedor front end, desenvolvedor web, desenvolvimento web, JavaScript, HTML, CSS, React, código, portfólio de código, design responsivo, engenheiro de software, web designer",
   navigation: {
     title: "Navegação principal",
     language: {

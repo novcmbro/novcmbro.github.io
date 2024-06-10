@@ -1,4 +1,7 @@
 const enUS = {
+  title: "Portfolio",
+  description: "Portfolio of Novcmbro (Novembro), Front End Web Developer",
+  keywords: "portfolio, front end developer, web developer, web development, JavaScript, HTML, CSS, React, coding portfolio, responsive design, software engineer, web designer",
   navigation: {
     title: "Main navigation",
     language: {
