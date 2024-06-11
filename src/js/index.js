@@ -5,6 +5,9 @@ import setAge from "./setAge.js"
 document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.classList.add("js-enabled")
   initTranslation()
-  navigateToSection()
-  setAge()
+
+  if (window.location.pathname === "/") {
+    navigateToSection()
+    setAge()
+  }
 })

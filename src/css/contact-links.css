@@ -8,6 +8,10 @@
   -webkit-filter: drop-shadow(var(--shadow-offset) var(--shadow-blur) var(--shadow-color));
 }
 
+.contact-links-list.not-found {
+  margin-top: var(--spacing-xl);
+}
+
 .about .contact-links-list {
   margin-top: var(--spacing-lg);
 }

@@ -61,6 +61,14 @@ const enUS = {
   },
   thank_you: {
     title: "Thank you"
+  },
+  not_found: {
+    title: "Page not found",
+    description: "The page you are trying to access does not exist.",
+    back: {
+      icon: "Arrow left",
+      button: "Back home"
+    }
   }
 }
 

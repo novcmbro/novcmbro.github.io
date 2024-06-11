@@ -33,6 +33,18 @@
   margin-top: var(--spacing-sm);
 }
 
+.nav-button.not-found-back {
+  display: inline-block;
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  margin-top: var(--spacing-md);
+}
+
+.nav-button .not-found-back-icon {
+  vertical-align: middle;
+  margin-right: var(--spacing-sm);
+}
+
 :root.js-enabled .nav-noscript-message {
   display: none;
 }

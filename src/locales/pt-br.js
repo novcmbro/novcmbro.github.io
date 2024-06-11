@@ -61,6 +61,14 @@ const ptBR = {
   },
   thank_you: {
     title: "Agradecimentos"
+  },
+  not_found: {
+    title: "Página não encontrada",
+    description: "A página que você está tentando acessar não existe.",
+    back: {
+      icon: "Seta para esquerda",
+      button: "Voltar para início"
+    }
   }
 }
 
