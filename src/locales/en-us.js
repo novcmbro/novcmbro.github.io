@@ -5,17 +5,11 @@ const enUS = {
   navigation: {
     title: "Main navigation",
     language: {
-      label: "Change language",
-      icon: "Globe"
+      label: "Change language to Portuguese",
+      alert: "Language changed to English."
     },
-    previous: {
-      label: "Previous section",
-      icon: "Chevron up"
-    },
-    next: {
-      label: "Next section",
-      icon: "Chevron down"
-    }
+    previous_section: "Previous section",
+    next_section: "Next section"
   },
   home: {
     title: "Home",
@@ -65,10 +59,7 @@ const enUS = {
   not_found: {
     title: "Page not found",
     description: "The page you are trying to access does not exist.",
-    back: {
-      icon: "Arrow left",
-      button: "Back home"
-    }
+    back: "Back home"
   }
 }
 

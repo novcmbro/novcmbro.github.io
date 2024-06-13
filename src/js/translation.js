@@ -33,6 +33,9 @@ const changeLanguage = () => {
   localStorage.setItem(localStorageKey, languageElement.textContent)
   initTranslation()
   translateElements()
+
+  const languageAlert = document.querySelector("#nav-language-alert")
+  languageAlert.setAttribute("aria-hidden", false)
 }
 
 export const initTranslation = () => {
@@ -55,7 +58,6 @@ export const initTranslation = () => {
     const hasInvalidId = hasId && !id.match(`^[a-z${separator.nesting}${separator.word}]+$`)
 
     if (hasId && !hasInvalidId) {
-      element.ariaLive = "polite"
       element.textContent = translation(id)
     }
   }

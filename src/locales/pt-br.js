@@ -5,17 +5,11 @@ const ptBR = {
   navigation: {
     title: "Navegação principal",
     language: {
-      label: "Mudar idioma",
-      icon: "Globo"
+      label: "Mudar idioma para inglês",
+      alert: "Idioma alterado para Português."
     },
-    previous: {
-      label: "Seção anterior",
-      icon: "Seta para cima"
-    },
-    next: {
-      label: "Próxima seção",
-      icon: "Seta para baixo"
-    }
+    previous_section: "Seção anterior",
+    next_section: "Próxima seção"
   },
   home: {
     title: "Início",
@@ -65,10 +59,7 @@ const ptBR = {
   not_found: {
     title: "Página não encontrada",
     description: "A página que você está tentando acessar não existe.",
-    back: {
-      icon: "Seta para esquerda",
-      button: "Voltar para início"
-    }
+    back: "Voltar para início"
   }
 }
 
