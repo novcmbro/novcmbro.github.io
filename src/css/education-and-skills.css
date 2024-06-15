@@ -24,6 +24,13 @@
 
 .skills-techs-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: var(--spacing-base) 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--spacing-md) var(--spacing-sm);
+  font-size: var(--font-sm);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.skills-tech-name {
+  display: block;
 }
